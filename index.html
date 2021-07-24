@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Sorting Visualizer helps to have a visualization of different sorting techiniques">
+        
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+        <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic" rel="stylesheet" type="text/css">
+        <title>Sorting Visualizer</title>
+        
+        
+        
+        
+        <meta name="msapplication-TileColor" content="#733ba1">
+        
+        
+        <meta name="theme-color" content="#ffffff">
+        
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="row">
+                    
+                    <ul class="main-nav js--main-nav">
+                        <li><a href="#features">Information Portal</a></li>
+                        <li><a href="#project">Visualizer</a></li>
+                        <li><a href="#plans">Comparision</a></li>
+                        
+                    </ul>
+                    <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+                </div>
+            </nav>
+            <div class="hero-text-box">
+                <h1>Understand sorting more easier<br>With one click</h1>
+                <h3>A good start for beginners and a refresher for professionals</h3>
+                
+            </div>
+            
+        </header>
+        
+        <section class="section-features js--section-features" id="features">
+            <div class="row">
+                <h2>Information Portal</h2>
+                <p class="long-copy">
+                    We have learnt many sorting algorithms, but often we fail to understand the core idea of a particular algorithm maybe because we are unable to visualize how they work. So the most important thing to understand about these algorithms is visualization.
+                </p>
+            </div>
+            
+            <div class="row js--wp-1">
+                <div class="col span-1-of-4 box">
+                    
+                    <h3>Quick Sort</h3>
+                    <p>
+                        Quicksort is an in-place sorting algorithm. When implemented well, it can be somewhat faster than merge sort and about two or three times faster than heapsort.
+                    </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    
+                    <h3>Bubble Sort</h3>
+                    <p>
+                        Bubble sort, sometimes referred to as sinking sort, is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order.
+                    </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    
+                    <h3>Merge Sort</h3>
+                    <p>
+                        t works by recursively breaking down a problem into two or more sub-problems of the same or related type, until these become simple enough to be solved directly.
+                    </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    
+                    <h3>Insertion Sort</h3>
+                    <p>
+                        Insertion sort is a simple sorting algorithm that builds the final sorted array one item at a time. It is much less efficient on large lists than more advanced algorithms such as quicksort, heapsort, or merge sort.
+                    </p>
+                </div>
+                
+            </div>  
+            <div class="row js--wp-1">
+                <div class="col span-1-of-4 box">
+                    
+                    <h3>Selection Sort</h3>
+                    <p>
+                        In computer science, selection sort is an in-place comparison sorting algorithm. It has an O(n²) time complexity, which makes it inefficient on large lists, and generally performs worse than the similar insertion sort. 
+                    </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    
+                    <h3>Heap Sort</h3>
+                    <p>
+                        In computer science, heapsort is a comparison-based sorting algorithm. Heapsort can be thought of as an improved selection sort.
+                    </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    
+                    <h3>Radix Sort</h3>
+                    <p>
+                        In computer science, radix sort is a non-comparative sorting algorithm. It avoids comparison by creating and distributing elements into buckets according to their radix.
+                    </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    
+                    <h3>Bucket Sort</h3>
+                    <p>
+                        Bucket sort, or bin sort, is a sorting algorithm that works by distributing the elements of an array into a number of buckets. Each bucket is then sorted individually.
+                    </p>
+                </div>
+                
+            </div> 
+        </section>
+        
+        
+        
+        
+        
+        
+        
+        
+        <section class="section-testimonials" id="project">
+            <div class="row">
+                <h2>Visualizer</h2>
+            </div>
+            <div class="col gap-2 d-sm-flex" id="newArray">
+                <button class="btn btn-full newArray">New Array</button>
+            </div>
+            
+            <div class="col" id="input">
+                <span id="size">Size
+                    <input id="arr_sz" type="range" min="5" max="100" step=1 value=60>
+                </span>
+                <span id="speed">Speed
+                    <input id="speed_input" type="range" min="20" max="300" stepDown=10 value=60>
+                </span>
+            </div class="col gap-2 d-sm-flex justify-content-end">
+            <div class="col gap-2 d-sm-flex justify-content-end">
+                <button class="btn btn-full bubbleSort">Bubble Sort</button>
+                <button class="btn btn-full selectionSort">Selection Sort</button>
+                <button class="btn btn-full insertionSort">Insertion Sort</button>
+                <button class="btn btn-full quickSort">Quick Sort</button>
+                <button class="btn btn-full mergeSort">Merge Sort</button>
+
+                <div id="bars" class="flex-container"></div>
+                
+
+
+
+            </div>
+        </section>
+        
+
+
+
+        <section class="section-plans js--section-plans" id="plans">
+            <div class="row">
+                <h2>Comparision</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-4">
+                    <div class="plan-box js--wp-4">
+                        <div>
+                            <h3>Algorithm</h3>
+                        </div>
+                        <div>
+                            <div>
+                                
+                                <h3> Quick Sort</h3>
+                                <h3>Bubble Sort</h3>
+                                <h3>Merge Sort</h3>
+                                <h3>Insertion Sort</h3>
+                                <h3>Selection Sort</h3>
+                                <h3>Heap Sort</h3>
+                                <h3>Radix Sort</h3>
+                                <h3>Bucket Sort</h3>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="plan-box">
+                        <div>
+                            <h3>Best</h3>
+                            
+                        </div>
+                        <div>
+                            <div>
+                                
+                                <h3>Ω(n log(n))</h3>
+                                <h3>Ω(n)</h3>
+                                <h3>Ω(n log(n))</h3>
+                                <h3>Ω(n)</h3>
+                                <h3>Ω(n^2)</h3>
+                                <h3>Ω(n log(n))</h3>
+                                <h3>Ω(nk)</h3>
+                                <h3>Ω(n+k)</h3>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="plan-box">
+                        <div>
+                            <h3>Average</h3>
+                            
+                        </div>
+                        <div>
+                            <div>
+                                
+                                <h3>Θ(n log(n))</h3>
+                                <h3>Θ(n^2)</h3>
+                                <h3>Θ(n log(n))</h3>
+                                <h3>Θ(n^2)</h3>
+                                <h3>Θ(n^2)</h3>
+                                <h3>Θ(n log(n))</h3>
+                                <h3>Θ(nk)</h3>
+                                <h3>Θ(n+k)</h3>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col span-1-of-4">
+                    <div class="plan-box">
+                        <div>
+                            <h3>Worst</h3>
+                            
+                        </div>
+                        <div>
+                            <div>
+                                
+                                <h3>O(n^2)</h3>
+                                <h3>O(n^2)</h3>
+                                <h3>O(n log(n))</h3>
+                                <h3>O(n^2)</h3>
+                                <h3>O(n^2)</h3>
+                                <h3>O(n log(n))</h3>
+                                <h3>O(nk)</h3>
+                                <h3>O(n^2)</h3>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+        
+        
+        <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                        <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    Copyright &copy; 2021 by PecTeam11. All rights reserved.
+                </p>
+            </div>
+        </footer>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/script.js"></script>
+    <script src="js_files/sorting.js"></script>
+    <script src="js_files/bubble.js"></script>
+    <script src="js_files/insertion.js"></script>
+    <script src="js_files/merge.js"></script>
+    <script src="js_files/quick.js"></script>
+    <script src="js_files/selection.js"></script>
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-61026110-2', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+    </body>  
+    
+</html>
